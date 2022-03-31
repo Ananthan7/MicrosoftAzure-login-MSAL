@@ -1,0 +1,21 @@
+<nav>
+    <div class="nav-item">
+        <a routerLink="">Welcome</a>
+    </div>
+    <div class="nav_item">
+        <ul>
+            <li><a routerLink="">Home</a></li>
+            <!-- <li><a routerLink="login">Login</a></li> -->
+            <!-- <li><a routerLink="register">Register</a></li> -->
+            <li><a routerLink="dashboard" *ngIf="isLoggedIn()">dashboard</a></li>
+
+            <li><button class="login" (click)="login()" *ngIf="!isLoggedIn()">Microsoft Login</button></li>
+            <li><button class="login" (click)="logout()" *ngIf="isLoggedIn()">LOG OUT</button></li>
+
+        </ul>
+    </div>
+</nav>
+<div>
+    <img src="../assets/dm.jpg" alt="">
+</div>
+

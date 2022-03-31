@@ -1,0 +1,19 @@
+<nav>
+    <div class="nav-item">
+        <a routerLink="">Home  </a> <span>>></span> <a routerLink="login">  Login </a>
+    </div>
+    
+</nav>
+<div class="app">
+    <div class="bg"></div>
+    <!-- login form -->
+    <!-- <div>login</div> -->
+    <form [formGroup]="loginForm" (ngSubmit)="handleLogin()">
+        <div class="inputs">         
+            <input type="phone" formControlName= "userName" name="userName" placeholder="user name">
+            <input type="password"  formControlName= "password" name="password" placeholder="password">
+            <p class="light"><a routerLink="">Forgot password?</a></p>
+        </div>
+        <button type="submit">Continue</button>
+    </form>
+</div>
